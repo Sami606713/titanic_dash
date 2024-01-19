@@ -18,11 +18,3 @@ class Coustom_exception(Exception):
 
     def __str__(self):
         return self.error_message
-
-
-if __name__=="__main__":
-    try:
-        a=samiullah
-    except Exception as e:
-        logging.info("variable not define")
-        raise Coustom_exception(e,sys)
